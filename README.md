@@ -1,2 +1,2 @@
-[Click Here for Portfolio](https://www.iamhimanshugulati.github.io)
+[Click Here for Portfolio](https://iamhimanshugulati.github.io/)
 
