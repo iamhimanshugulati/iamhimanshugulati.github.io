@@ -2,680 +2,300 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Himanshu Gulati Portfolio">
-    <meta name="author" content="Himanshu Gulati">
-
-    <title>Portfolio: Himanshu Gulati</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu's Portfolio</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
-
-        .about-tools ul li,
-        .contact-social-icons ul a li {
-            text-align: center;
-        }
-
-        .centered {
-            float: none;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .break {
-            clear: both;
-            margin-top: 10px;
-        }
-
-        @media (min-width: 768px) {
-            .pull-right-sm {
-                float: right !important;
-            }
-
-            .pull-left-sm {
-                float: left !important;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .pull-right-md {
-                float: right !important;
-            }
-
-            .pull-left-md {
-                float: left !important;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .pull-right-lg {
-                float: right !important;
-            }
-
-            .pull-left-lg {
-                float: left !important;
-            }
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            position: relative;
-            height: 100%;
-        }
-
-        img {
-            width: 100%;
-        }
-
-        body {
-            height: 100%;
-            font-family: "Comfortaa", Helvetica, Arial, sans-serif;
-            background-color: #25b79f;
-            /* Margin bottom by footer height */
-            margin-bottom: 60px;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5 {
-            font-family: "Comfortaa", Helvetica, Arial, sans-serif;
-            color: #07374a;
-        }
-
-        p {
-            font-family: "Quattrocento", sans-serif;
-            color: #f0f0e6;
-        }
-
-        body>.container-fluid {
-            padding: 60px 15px 0;
-        }
-
-        .container-fluid .text-muted {
-            margin: 20px 0;
-        }
-
-        .btn:focus,
-        a:focus {
-            outline: none !important;
-        }
-
-        .navbar {
-            height: 70px;
-            background-color: transparent;
-            background: transparent;
-            border: none;
-            color: #f0f0e6;
-            z-index: 100;
-            margin-bottom: 0;
-            border-radius: 0;
-            transition: background-color 1s ease 0s;
-        }
-
-        .navbar-brand {
-            display: none;
-            margin-top: 10px;
-            color: #f0f0e6;
-            font-weight: 400;
-        }
-
-        .navbar-default .navbar-nav>li>a {
-            color: #f0f0e6;
-            font-weight: 500;
-            font-size: 1em;
-            text-transform: lowercase;
-            margin: 10px 5px 5px 5px;
-            border-radius: 5px;
-        }
-
-        .navbar-default .navbar-nav>li>a:hover,
-        .navbar-default .navbar-nav>li>a:active,
-        .navbar-default .navbar-nav>li>a:focus {
-            color: #f0f0e6;
-            border: 1px solid #f0f0e6;
-        }
-
-        .navbar-default .navbar-nav>li>a:visited {
-            color: #f0f0e6;
-            text-decoration: none;
-        }
-
-        .navbar-default .navbar-nav>.active>a,
-        .navbar-default .navbar-nav>.active>a:hover,
-        .navbar-default .navbar-nav>.active>a:focus {
-            background-color: transparent;
-            color: #f0f0e6;
-        }
-
-        .navbar-default .navbar-toggle {
-            border-color: #f0f0e6;
-        }
-
-        .navbar-default .navbar-toggle:hover,
-        .navbar-default .navbar-toggle:focus {
-            background-color: #07374a;
-        }
-
-        .navbar-default .navbar-toggle .icon-bar {
-            color: #f0f0e6;
-            background-color: #f0f0e6;
-        }
-
-        .navbar-default .navbar-collapse.collapse.in ul {
-            background-color: #07374a;
-        }
-
-        /* Solid class attached on scroll past first section */
-        .navbar.solid {
-            background-color: #07374a;
-            transition: background-color 1s ease 0s;
-            box-shadow: 0 0 4px rgba(7, 55, 74, 0.2);
-        }
-
-        .navbar.solid .navbar-brand {
-            display: inline-block;
-            color: #f0f0e6;
-            transition: color 1s ease 0s;
-        }
-
-        .navbar.solid .navbar-nav>li>a {
-            color: #f0f0e6;
-            transition: color 1s ease 0s;
-        }
-
-        .cover {
-            padding: 10% 0 10% 0;
-        }
-
-        .cover.top {
-            padding: 15% 0 10% 0;
-            height: 100vh;
-            display: flex;
-            background-color: #25b79f;
-        }
-
-        .cover.bottom {
-            padding: 10% 0 10% 0;
-        }
-
-        .headline {
-            padding-top: 6.25em;
-        }
-
-        @media screen and (min-width: 768px) {
-            .headline {
-                padding-top: 3.75em;
-            }
-        }
-
-        @media screen and (min-width: 992px) {
-            .headline {
-                padding-top: 1.5625em;
-            }
-        }
-
-        @media screen and (min-width: 1200px) {
-            .headline {
-                padding-top: 0px;
-            }
-        }
-
-        #about {
-            background-color: #07374a;
-        }
-
-        #about h2 {
-            color: #25b79f;
-        }
-
-        .profile-img {
-            margin-bottom: 15px;
-            width: 120px;
-        }
-
-        .about,
-        .about-info,
-        .about-tools,
-        .about-last {
-            padding: 4% 10% 1% 10%;
-            font-size: 1.25em;
-        }
-
-        .about-tools {
-            padding-top: 4.375em;
-            font-weight: 700;
-            font-size: 1.5em;
-        }
-
-        @media screen and (min-width: 992px) {
-            .about-tools {
-                padding-top: 5.625em;
-            }
-        }
-
-        .about-tools ul:first-child {
-            padding-left: 0px;
-        }
-
-        .about-tools ul {
-            color: #25b79f;
-            list-style: none;
-        }
-
-        .about-tools ul li {
-            padding-top: 0.75em;
-        }
-
-        .about-last {
-            padding-top: 3.125em;
-            padding-bottom: 0;
-            font-size: 1.125em;
-        }
-
-        @media screen and (min-width: 992px) {
-            .about-last {
-                padding-top: 0;
-            }
-        }
-
-        .about-last p {
-            color: #25b79f;
-        }
-
-        #portfolio {
-            background-color: #25b79f;
-        }
-
-        #portfolio h2 {
-            padding-bottom: 1.25em;
-        }
-
-        @media screen and (min-width: 768px) {
-            .portfolio-projects {
-                margin-top: 0.625em;
-            }
-        }
-
-        .portfolio-projects--title {
-            margin-top: 0.9375em;
-        }
-
-        @media screen and (min-width: 768px) {
-            .portfolio-projects--title {
-                margin-top: 20%;
-            }
-        }
-
-        @media screen and (min-width: 1200px) {
-            .portfolio-projects--title {
-                margin-top: 5%;
-            }
-        }
-
-        @media screen and (min-width: 768px) {
-            .portfolio-projects--desc {
-                margin-top: 10%;
-                margin-bottom: 10%;
-            }
-        }
-
-        .portfolio-projects--btn {
-            background: transparent;
-            color: #07374a;
-            border: 1px solid #07374a;
-            border-radius: 5px;
-            margin-bottom: 1.25em;
-        }
-
-        .portfolio-projects--btn:hover {
-            background: #07374a;
-            color: #f0f0e6;
-        }
-
-        .portfolio-projects--image {
-            margin-bottom: 1.875em;
-            padding-top: 5%;
-        }
-
-        #contact {
-            background-color: #07374a;
-        }
-
-        #contact h2 {
-            color: #25b79f;
-        }
-
-        .contact-social-icons p {
-            color: #25b79f;
-        }
-
-        .contact-social-icons ul a {
-            color: #25b79f;
-            list-style: none;
-        }
-
-        .contact-social-icons ul a:hover {
-            color: #f0f0e6;
-        }
-
-        .contact-social-icons ul a li {
-            display: inline-block;
-            padding: 2%;
-        }
-
-        .footer {
-            bottom: 0;
-            width: 100%;
-            /* Set the fixed height of the footer here */
-            height: 30px;
-            background-color: #07374a;
-            color: #f0f0e6;
-        }
-
-        #scrollIcon,
-        #scrollTopIcon {
-            margin-top: 200px;
-            padding: 10px;
-            font-size: 1.5em;
-            color: #07374a;
-            border: solid 2px #07374a;
-            border-radius: 50%;
-        }
-
-        #scrollTopIcon {
-            margin-top: 10px;
-            font-size: 1em;
-            color: #f0f0e6;
-            border-color: #f0f0e6;
-        }
-
-        .back-to-top {
-            display: none;
-        }
-
-        .back-to-top.visible {
-            display: block;
-        }
-    </style>
-
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Erin Manahan</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li id="nav-about"><a href="#about">About</a></li>
-                    <li id="nav-portfolio"><a href="#portfolio">Portfolio</a></li>
-                    <li id="nav-contact"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </nav>
+  <!-- header section starts  -->
 
-    <!-- Begin page content -->
-    <div class="container-fluid">
-
-        <div class="row cover top">
-            <div class="col-xs-12">
-                <div class="row">
-                    <div class="col-xs-12 headline">
-                        <h1 class="text-center">Hi, I'm Himanshu Gulati</h1>
-                        <p class="lead text-center">Data Analyst | Web Developer | Programmer | Continous Learner</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 center-block text-center">
-                        <a href="#about"><span id="scrollIcon" class="front-glyph glyphicon glyphicon-menu-down"
-                                aria-hidden="true"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="about" class="row cover">
-            <h2 class="text-center">About Me</h2>
-            <div class="row">
-                <div class="col-md-6 text-center about-info">
-                    <img class="img-circle text-center profile-img"
-                        src="https://avatars.githubusercontent.com/u/64896622?v=4">
-                    <p class="text-center">A Certified Data Analyst & Web Developer with a passion for developing an
-                        innovative program. Experienced in BPO & KPO sectors from Ambala (HR), India. I'm currently
-                        learning Django and Data Science. I am pursuing 2 years IBM Advanced Diploma Course IT,
-                        Networking & Cloud Computing. I'm having fun learning the basics! </p>
-                </div>
-                <div class="col-md-6 about-tools">
-                    <p class="text-center">Here's a few of the tools I use</p>
-                    <div class="col-xs-6">
-                        <ul>
-                            <li>HTML5/CSS3</li>
-                            <li>Javascript</li>
-                            <li>Bootstrap</li>
-                            <li>Git</li>
-                            <li>PHP</li>
-                            <li>Linux</li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6">
-                        <ul>
-                            <li>Python</li>
-                            <li>Python (DS)</li>
-                            <li>Django</li>
-                            <li>Node.js</li>
-                            <li>MongoDB</li>
-                            <li>MYSQL</li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="row break">
-                    <div class="col-md-6 about-last">
-                        <p class="text-center">Check out my latest projects <span
-                                class="glyphicon glyphicon-arrow-down"></span></p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- End #About -->
-
-        <div id="portfolio" class="row cover">
-            <h2 class="text-center">Portfolio</h2>
-            <div class="container">
-                <div class="row portfolio-projects">
-                    <!-- Two project row-->
-                    <div class="col-lg-6">
-                        <!--1st side project -->
-                        <div class="row">
-                            <div class="col-sm-5 text-center">
-                                <h4 class="portfolio-projects--title">TourZilla v1 & v2 (Web Development)</h4>
-                                <p class="portfolio-projects--desc">We designed this as Hotel Booking and realted
-                                    services site where user come and try to book.</p>
-                                <p class="portfolio-projects--desc">Uses: HTML5/CSS3, JS (Bootstrap 4.7), PHP, MYSQL</p>
-                                <a class="btn btn-rounded portfolio-projects--btn"
-                                    href="https://github.com/iamhimanshugulati/tourzilla-v2" role="button"
-                                    target="_blank">View Project</a>
-                            </div>
-                            <div class="col-sm-7 text-center">
-                                <img class="portfolio-projects--image" src="/tourzillav2.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <!--2nd side project -->
-                        <div class="row">
-                            <div class="col-sm-5 text-center pull-right-sm">
-                                <!--flipped on small, unflipped on large-->
-                                <h4 class="portfolio-projects--title">Covid-19 (Data Analysis)</h4>
-                                <p class="portfolio-projects--desc">Jupyter notebook deals with covid-19 Germany Country
-                                    data of analysis.</p>
-                                <p class="portfolio-projects--desc">Uses: Python & it's Libraries (Numpy, Pandas,
-                                    Seaborn, Matplotlib, Sklearn) </p>
-                                <a class="btn btn-rounded portfolio-projects--btn"
-                                    href="https://github.com/iamhimanshugulati/Covid19-Germany-Data-Analysis"
-                                    role="button" target="_blank">View Project</a>
-                            </div>
-                            <div class="col-sm-7 text-center pull-right-sm">
-                                <!--flipped on small, unflipped on large-->
-                                <img class="img-rounded portfolio-projects--image" src="/covid-19-analysis.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end Two project row-->
-
-                <div class="row portfolio-projects">
-                    <!-- Opposite Two project row-->
-                    <div class="col-lg-6">
-                        <!--1st side project -->
-                        <div class="row">
-                            <div class="col-sm-5 text-center">
-                                <h4 class="portfolio-projects--title">Multithread (Web Development)</h4>
-                                <p class="portfolio-projects--desc">This site provided services like - Discussion Forum,
-                                    Real-time Chat & Notes Application.
-                                </p>
-                                <p class="portfolio-projects--desc">Uses: HTML5/CSS3, JS (Bootstrap 4.7, PHP, MYSQL</p>
-                                <a class="btn btn-rounded portfolio-projects--btn"
-                                    href="https://github.com/iamhimanshugulati/multithread" role="button" target="_blank">View Project</a>
-                            </div>
-                            <div class="col-sm-7 text-center">
-                                <img class="img-rounded portfolio-projects--image"
-                                    src="/multithread.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <!--2nd side project -->
-                        <div class="row">
-                            <div class="col-sm-5 text-center pull-right-sm">
-                                <!--flipped on small, unflipped on large-->
-                                <h4 class="portfolio-projects--title">Student Analysis (Data Analysis)</h4>
-                                <p class="portfolio-projects--desc">This project deals with excel sheet and notebook with student's portfolio data.</p>
-                                <p class="portfolio-projects--desc">Uses: Python & it's Libraries (Numpy, Pandas, Seaborn, Matplotlib)</p>
-                                <a class="btn btn-rounded portfolio-projects--btn"
-                                    href="https://github.com/iamhimanshugulati/student-portfolio-analysis" role="button" target="_blank">View Project</a>
-                            </div>
-                            <div class="col-sm-7 text-center pull-right-sm">
-                                <!--flipped on small, unflipped on large-->
-                                <img class="img-rounded portfolio-projects--image"
-                                    src="/student-portfolio-analysis.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end Opposite Two project row-->
-
-            </div>
-        </div>
-    </div><!-- End #Portfolio -->
-
-    <div id="contact" class="row cover bottom">
-        <h2 class="text-center contact-header">Contact Me</h2>
-        <p class="text-center contact-email">Get in touch with me <span class="glyphicon glyphicon-arrow-right"></span>
-            himanshugulati@outlook.in</p>
-        <div class="text-center contact-social-icons">
-            <p>Or find me on:</p>
-            <ul class="centered">
-                <a href="https://www.linkedin.com/in/ihimanshugulati/">
-                    <li><i class="fa fa-linkedin-square"></i> LinkedIn</li>
-                </a>
-                <a href="https://github.com/iamhimanshugulati">
-                    <li><i class="fa fa-github"></i> Github</li>
-                </a>
-
-                <a href="https://www.kaggle.com/himanshugulati138">
-                    <li><i class="fab fa-kaggle"></i> Kaggle</li>
-                </a>
-            </ul>
-            </p>
-
-        </div><!-- End #Contact -->
-
+  <header>
+    <div class="user">
+      <img src="img/profile-pic.png" alt="mypic" />
+      <h3 class="name">Himanshu Gulati</h3>
+      <p class="post">AI Intern at IBM | Full Stack | Data Science</p>
     </div>
 
-    <footer class="footer">
-        <div class="container">
+    <nav class="navbar" style="margin: 0px 0px 10px 0px;">
+      <ul>
+        <li>
+          <a href="#home"> <i class="fa fa-home"></i> Home </a>
+        </li>
+        <li>
+          <a href="#skills"> <i class="fa fa-cogs"></i> Technical Skills</a>
+        </li>
+        <li>
+          <a href="#portfolio"> <i class="fa fa-briefcase"></i> Highlighted Projects</a>
+        </li>
+        <li>
+          <a href="#badges"> <i class="fa fa-book"></i> Digital Badges</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- header section ends -->
+
+  <div id="menu" class="fas fa-bars"></div>
+
+  <!-- home section starts  -->
+
+  <section class="home" id="home">
+    <h3>HI THERE !</h3>
+    <h1>I'M <span>Himanshu Gulati</span></h1>
+    <p class="para">
+      A Certified Data Analyst and A Web Developer with a passion for developing programs, specializing in Python with
+      4+ years of experience in the BPO and KPO sectors. Skilled in Analyzing Data, Web Development, Web Designing,
+      Computer Networking, USA Medical Billing and expertise in handling Complaints Voice or Non-Voice.
+
+      <br />
+    </p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/ihimanshugulati/" target="_blank" class="fa"><img src="img/linkedin.svg"
+          height="50" /> </a>
+      <a href="https://github.com/iamhimanshugulati" target="_blank" class="fa"><img src="img/github.svg" height="50" />
+      </a>
+      <a href="https://www.kaggle.com/himanshugulati138" target="_blank" class="fa"><img src="img/kaggle-icon.svg"
+          height="50" /> </a>
+      <a href="https://www.hackerrank.com/himanshugulati12" target="_blank" class="fa"><img src="img/hackerrank.svg"
+          height="50" /> </a>
+      <a href="mailto:himanshugulati@outlook.in" target="_blank" class="fa"><img src="img/mail-svgrepo-com.svg"
+          height="50" /> </a>
+      <a href="tel:+917015948964" target="_blank" class="fa"><img src="img/phone-call-call-svgrepo-com.svg"
+          height="50" /> </a>
+      <a href="/Resume.pdf" target="_blank" class="fa"><img src="img/curriculum-resume-svgrepo-com.svg" height="50" />
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="counter">
+        <div class="box">
+          <span>4+</span>
+          <h3>Years Of Experience</h3>
         </div>
-    </footer>
 
-    <script>
-        $(document).ready(function () {
+        <div class="box">
+          <span>13+</span>
+          <h3>Project Completed</h3>
+        </div>
+      </div>
+    </div>
 
-            // Transition effect for navbar and back-to-top icon
-            $(window).scroll(function () {
-                // checks if window is scrolled more than 500px, adds/removes solid class
-                if ($(this).scrollTop() > 550) {
-                    $('.navbar').addClass('solid');
-                    $('.back-to-top').addClass('visible');
-                } else {
-                    $('.navbar').removeClass('solid');
-                    $('.back-to-top').removeClass('visible');
-                }
+  </section>
 
-            });
+  <!-- home section ends -->
 
 
-            // Scrolling effect for Arrow icons
-            $("#scrollIcon").click(function (e) {
-                e.preventDefault();
-                $.scrollTo($("#about"), 1000);
-            });
-            $("#nav-about").click(function (e) {
-                e.preventDefault();
-                $.scrollTo($("#about"), 1000);
-            });
-            $("#nav-portfolio").click(function (e) {
-                e.preventDefault();
-                $.scrollTo($("#portfolio"), 1000);
-            });
-            $("#nav-contact").click(function (e) {
-                e.preventDefault();
-                $.scrollTo($("#contact"), 1000);
-            });
-            $(".navbar-brand").click(function (e) {
-                e.preventDefault();
-                $.scrollTo(0, 1000);
-            });
+  <section class="about" id="skills">
+    <h1 class="heading">
+      <i class="fa fa-cogs"></i> Technical <span> Skills </span>
+    </h1>
 
-        });
-    </script>
+    <div class="row" style="width: 70%; margin: 0 auto">
+      <div class="info">
 
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
-    <script src="https://kit.fontawesome.com/2a273d9235.js" crossorigin="anonymous"></script>
+        <p>Python</p>
+        <div class="container">
+          <div class="skills python"></div>
+        </div>
 
+        <p>Data Science</p>
+        <div class="container">
+          <div class="skills dataScience"></div>
+        </div>
+
+        <p>MySQL</p>
+        <div class="container">
+          <div class="skills mysql"></div>
+        </div>
+
+        <p>PowerBI</p>
+        <div class="container">
+          <div class="skills powerBI"></div>
+        </div>
+
+        <p>MS Excel</p>
+        <div class="container">
+          <div class="skills msexcel"></div>
+        </div>
+
+        <p>MySQL</p>
+        <div class="container">
+          <div class="skills mysql"></div>
+        </div>
+
+        <p>HTML5 & CSS3</p>
+        <div class="container">
+          <div class="skills htmlcss"></div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="container">
+          <div class="skills js"></div>
+        </div>
+
+        <p>MERN Stack</p>
+        <div class="container">
+          <div class="skills mern"></div>
+        </div>
+
+        <p>PHP</p>
+        <div class="container">
+          <div class="skills php"></div>
+        </div>
+
+        <p>Git</p>
+        <div class="container">
+          <div class="skills git"></div>
+        </div>
+
+        <p>Linux (Ubuntu)</p>
+        <div class="container">
+          <div class="skills linux"></div>
+        </div>
+
+        <p>System Design, IBM Cloud & AWS</p>
+        <div class="container">
+          <div class="skills sdica"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- portfolio section starts  -->
+
+  <section class="portfolio" id="portfolio">
+    <h1 class="heading">
+      <i class="fa fa-briefcase"></i> Highlighted <span> Projects</span>
+    </h1>
+
+    <div class="box-container">
+      <div class="box">
+        <a href="https://jolly-mcclintock-ab4642.netlify.app/" target="_blank"><img src="img/1.png" alt="React Myntra Clone" /></a>
+      </div>
+
+      <div class="box">
+        <a href="https://thirsty-kilby-78349c.netlify.app/" target="_blank"><img src="img/2.png" alt="Diabetes Prediction Static Page" /></a>
+      </div>
+
+      <div class="box">
+        <a href="https://github.com/iamhimanshugulati/Loan-Payments-Data-EDA/blob/main/Loan_Payments_Data_EDA.ipynb" target="_blank"><img src="img/7.png" alt="Loan Payments Data EDA" /></a>
+      </div>
+
+      <div class="box">
+        <a href="https://github.com/iamhimanshugulati/Covid19-Germany-Data-Analysis/blob/main/Covid_Germany_Final.ipynb" target="_blank"><img src="img/8.png" alt="Covid-19-Germany-Data notebook" /></a>
+      </div>
+
+      <div class="box">
+        <a href="https://iamhimanshugulati.github.io/mytourzilla/" target="_blank"><img src="img/3.png"
+            alt="TourZilla V1" /></a>
+      </div>
+
+      <div class="box">
+        <a href="https://iamhimanshugulati.github.io/student-portfolio-analysis/" target="_blank"><img src="img/4.png" alt="Student portfolio Analysis" /></a>
+      </div>
+
+      <div class="box">
+        <a href="https://github.com/iamhimanshugulati/multithread" target="_blank"><img src="img/5.png" alt="Multithread Forum site" /></a>
+      </div>
+
+      <div class="box">
+        <a href="https://github.com/iamhimanshugulati/tourzilla-v2" target="_blank"><img src="img/6.png" alt="Tourzilla v2" /></a>
+      </div>
+    </div>
+  </section>
+  <!-- portfolio section ends -->
+
+  <section class="badges" id="badges">
+    <h1 class="heading">
+      <i class="fa fa-book"></i> Digital <span> Badges</span>
+    </h1>
+
+    <div class="box-container">
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="7b832c3c-b395-4079-8373-0d3a07ca29ca" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="799eef05-d4dc-4794-8a79-14d161b3c75c" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="d934d0c4-6903-4c68-9406-833c9ddc8e35" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="dc521e10-3588-43ef-ab72-aea8fa828134" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="1a0e48cc-1c49-4425-97da-e6a424ae6371" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="5dc996bf-6584-49e3-b1d3-cc18804c30f7" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="88ae2e93-a47e-4944-bb44-79436df5f257" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="918613e4-6ad9-43b0-be74-8221a0051571" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="feb15ca9-ca6a-4cd2-ab15-9b665a4c353f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="9b5d0dd6-f47d-4f65-8758-d2d5950b7bb2" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="e06094a0-5da5-45e3-9177-deedfb630e77" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="57f092e3-9203-453b-b7be-19b80f547058" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="84f7cc23-03b3-440e-882c-1f003446efd7" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+
+      <div class="box">
+        <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="81a6231f-94d1-478d-872b-738c2a938710" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- scroll top button  -->
+
+  <!-- <a href="#home" class="top">
+      <img src="img/facebook.svg" alt="" />
+    </a> -->
+
+  <!-- jquery cdn link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
